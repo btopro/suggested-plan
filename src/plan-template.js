@@ -19,7 +19,7 @@ export class PlanTemplate extends LitElement {
   }
 
   updatePlan() {
-    const address = new URL('../api/plan-data.js', import.meta.url).href;
+    const address = '../api/plan-data';
     fetch(address)
       .then(response => {
         if (response.ok) {
